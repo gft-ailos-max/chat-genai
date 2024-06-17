@@ -6,7 +6,7 @@ import { ClientMockService } from '../clientes-mocados.service';
   template: `
     <ul>
       <li *ngFor="let c of Client.clients">
-        <p>Nome: <a href="clickName();">{{c.name}}</a> | Email: {{c.email}} | Admin: {{c.admin}} </p>
+        <p>Nome: <a href="clickName();">{{c.name}}</a> | Email: {{c.email}} | Admin: {{c.admin}} | senha: {{c.senha}} </p>
       </li>
     </ul>
     <p>{{ modulos }}</p>
