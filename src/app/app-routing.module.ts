@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ModuloComponent } from '../app/modulo/modulo.component';
+import { ModulosComponent } from '../app/modulos/modulos.component';
 
 const routes: Routes = [
-  { path: 'client-modules', component: ModuloComponent },
+  { path: 'client-modules', component: ModulosComponent },
   { path: '', redirectTo: '/client-modules', pathMatch: 'full' }
 ];
 
