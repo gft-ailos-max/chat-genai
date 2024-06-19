@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModulosComponent } from '../app/modulos/modulos.component';
 
 const routes: Routes = [
-  { path: 'client-modules', component: ModulosComponent },
-  { path: '', redirectTo: '/client-modules', pathMatch: 'full' }
+  { path: 'index', component: ModulosComponent },
+  { path: '', redirectTo: '/index', pathMatch: 'full' }
 ];
 
 @NgModule({
