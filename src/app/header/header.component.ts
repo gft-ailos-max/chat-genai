@@ -9,19 +9,19 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
   formGroup: FormGroup;
-  cities: { name: string, code: string }[] = [];
+  opcoes: { name: string, code: string }[] = [];
 
   constructor(private fb: FormBuilder) {
     this.formGroup = this.fb.group({
-      selectedCity: [null]
+      selectedOption: [null]
     });
 
-    this.cities = [
-      { name: 'New York', code: 'NY' },
-      { name: 'Rome', code: 'RM' },
-      { name: 'London', code: 'LDN' },
-      { name: 'Istanbul', code: 'IST' },
-      { name: 'Paris', code: 'PRS' }
+    this.opcoes = [
+      { name: 'Opção 1', code: '1' },
+      { name: 'Opção 2', code: '2' },
+      { name: 'Opção 3', code: '3' },
+      { name: 'Opção 4', code: '4' },
+      { name: 'Opção 5', code: '5' }
     ];
   }
 

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,8 @@ import { ModulosComponent } from './modulos/modulos.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TabViewModule } from 'primeng/tabview';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { TabViewModule } from 'primeng/tabview';
     AppRoutingModule,
     ReactiveFormsModule,
     DropdownModule,
-    TabViewModule
+    TabViewModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration()
