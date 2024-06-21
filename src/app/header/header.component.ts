@@ -8,20 +8,17 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
-  formGroup: FormGroup;
-  opcoes: { name: string, code: string }[] = [];
 
-  constructor(private fb: FormBuilder) {
-    this.formGroup = this.fb.group({
-      selectedOption: [null]
-    });
+  opcoes: any[];
+  selectedOption: any;
 
+  constructor() {
     this.opcoes = [
-      { name: 'Opção 1', code: '1' },
-      { name: 'Opção 2', code: '2' },
-      { name: 'Opção 3', code: '3' },
-      { name: 'Opção 4', code: '4' },
-      { name: 'Opção 5', code: '5' }
+      { label: 'Perfil', value: '1' },
+      { label: 'Configurações', value: '2' },
+      { label: 'Módulos', value: '3' },
+      { label: 'Histórico', value: '4' },
+      { label: 'Messagens', value: '5' }
     ];
   }
 

@@ -40,12 +40,7 @@ export class ModulosComponent {
       //       }
       //     }
       //   }
-  
-      //   clickName(this.modulos, this.Client);
-        // console.log(clickName(this.modulos, this.Client));
-  
-      // Greet('Hello','Steve');//OK, returns "Hello Steve!"
-      //console.log("tipo do modulos  " + typeof this.modulos);
+
   
       // for (let i = 0; i < this.Client.clients.length;){
       //   i++;

@@ -85,10 +85,12 @@
               <i class="pi mr-1">
                 <img src="assets/images/user.svg" alt="Image" height="20" class="pi mr-2">
               </i>
-              <form [formGroup]="formGroup">
+              <!-- <form [formGroup]="formGroup">
                 <p-dropdown formControlName="selectedOption" [options]="opcoes" optionLabel="name"
                 placeholder="Perfil" />
-              </form>
+              </form> -->
+              <p-dropdown [options]="opcoes" [(ngModel)]="selectedOption" placeholder="Perfil"></p-dropdown>
+
                 <a pripple="" pstyleclass="@next" enterclass="hidden" enteractiveclass="scalein" leavetoclass="hidden"
                 leaveactiveclass="fadeout"
                   class="p-element p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150">
