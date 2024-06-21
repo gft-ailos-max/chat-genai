@@ -3,7 +3,13 @@
     padding-right: 1rem !important;
 }
 
-.text-limit{
-    white-space: nowrap; 
-    width: 12em; 
+a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15em;
+}
+
+p-dropdown {
+    border-radius: 30px;
 }

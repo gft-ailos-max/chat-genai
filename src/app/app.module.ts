@@ -8,10 +8,18 @@ import { ModulosComponent } from './modulos/modulos.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { TabViewModule } from 'primeng/tabview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { BadgeModule } from 'primeng/badge';
+import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { StyleClassModule } from 'primeng/styleclass';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     DropdownModule,
     TabViewModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SelectButtonModule,
+    BadgeModule,
+    RippleModule,
+    ButtonModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    StyleClassModule,
+    AnimateOnScrollModule
   ],
   providers: [
     provideClientHydration()

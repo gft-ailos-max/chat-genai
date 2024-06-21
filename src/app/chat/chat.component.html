@@ -13,36 +13,59 @@
                 <div role="button" pripple=""
                   class="p-ripple p-element p-button p-component ng-star-inserted p-highlight" aria-pressed="true"
                   tabindex="0" aria-labelledby="Favorites">
-                  <span class="p-button-label ng-star-inserted" (click)="mensagemHistorico()">Histórico</span>
+                  <span class="p-button-label ng-star-inserted" (click)="mensagemHistorico()"><i
+                      class="pi pi-history"></i></span>
                   <span class="p-ink"></span></div>
                 <div role="button" pripple="" class="p-ripple p-element p-button p-component ng-star-inserted"
                   aria-pressed="false" tabindex="0" aria-labelledby="Apps">
-                  <span class="p-button-label ng-star-inserted" (click)="mensagemModulos()">Módulos</span>
+                  <span class="p-button-label ng-star-inserted" (click)="mensagemModulos()"><i
+                      class="pi pi-list"></i></span>
                   <span class="p-ink"></span></div>
 
               </div>
             </div>
             <div *ngIf="historico" class="overflow-y-auto px-5 flex-1">
               <ul class="list-none p-0 m-0 ng-star-inserted">
-
-                <li><a pripple=""
-                    class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors text-primary"
-                    style="border-radius: 12px;"><span class="font-medium">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</span><span class="p-ink"></span></a></li>
+                <li>
+                  <p class="text-primary">Ultimas 24 horas</p>
+                  <a pripple=""
+                    class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                    style="border-radius: 12px;">
+                    <span class="font-medium">
+                      Neque porro quisquam est qui dolorem ipsum
+                      quia dolor sit amet, consectetur, adipisci velit..."
+                    </span>
+                    <span class="p-ink"></span>
+                  </a>
+                </li>
                 <li><a pripple=""
                     class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
-                    style="border-radius: 12px;"><span class="font-medium">In eu felis vehicula, auctor dui in, egestas turpis. Vestibulum nec ultrices lorem. Suspendisse fringilla elit ligula, vitae placerat arcu pretium eget. Aenean et sem ullamcorper, convallis quam nec, imperdiet dolor. Quisque at neque at magna blandit interdum. Donec facilisis</span><span class="p-ink"
+                    style="border-radius: 12px;"><span class="font-medium">In eu felis vehicula, auctor dui in, egestas
+                      turpis. Vestibulum nec ultrices lorem. Suspendisse fringilla elit ligula, vitae placerat arcu
+                      pretium eget. Aenean et sem ullamcorper, convallis quam nec, imperdiet dolor. Quisque at neque at
+                      magna blandit interdum. Donec facilisis</span><span class="p-ink"
                       style="height: 215px; width: 215px; top: -82.5px; left: -18.5px;"></span></a></li>
+                <li>
+                  <br>
+                  <p class="text-primary">Ultimos 3 dias</p>
+                  <a pripple=""
+                    class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                    style="border-radius: 12px;"><span class="font-medium">ien libero, quis commodo augue malesuada at.
+                      Proin arcu libero, posuere a convallis tincidunt, convallis sed nunc. Quisque lacus justo,
+                      ultrices a congue in, aliquam eu nisi. Aliquam scelerisque est at tortor scelerisque interdum. Ut
+                      at varius magna. Sed et libero eget lorem mollis porttitor vitae sed libero. Morbi pharetra quam
+                      quis dapibus sollicitudin.</span><span class="p-ink"
+                      style="height: 215px; width: 215px; top: -67.5px; left: -72.5px;"></span></a>
+                </li>
                 <li><a pripple=""
                     class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
-                    style="border-radius: 12px;"><span class="font-medium">ien libero, quis commodo augue malesuada at. Proin arcu libero, posuere a convallis tincidunt, convallis sed nunc. Quisque lacus justo, ultrices a congue in, aliquam eu nisi. Aliquam scelerisque est at tortor scelerisque interdum. Ut at varius magna. Sed et libero eget lorem mollis porttitor vitae sed libero. Morbi pharetra quam quis dapibus sollicitudin.</span><span class="p-ink"
-                      style="height: 215px; width: 215px; top: -67.5px; left: -72.5px;"></span></a></li>
-                <li><a pripple=""
-                    class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
-                    style="border-radius: 12px;"><span class="font-medium">lit hendrerit vel. Duis vulputate justo nec ante aliquet mollis. </span>
+                    style="border-radius: 12px;"><span class="font-medium">lit hendrerit vel. Duis vulputate justo nec
+                      ante aliquet mollis. </span>
                   </a></li>
                 <li><a pripple=""
                     class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
-                    style="border-radius: 12px;"><span class="font-medium">Pellentesque vulputate nisl lorem, quis congue massa euismod non. Ves</span><span class="p-ink"
+                    style="border-radius: 12px;"><span class="font-medium">Pellentesque vulputate nisl lorem, quis
+                      congue massa euismod non. Ves</span><span class="p-ink"
                       style="height: 215px; width: 215px; top: -97.5px; left: -47.5px;"></span></a></li>
               </ul>
             </div>
@@ -76,6 +99,29 @@
                       style="height: 215px; width: 215px; top: -97.5px; left: -47.5px;"></span></a></li>
               </ul>
             </div>
+
+            <div class="mt-auto border-top-1 border-white-alpha-40">
+              <ul *ngIf="isListVisible"
+                class="list-none p-2 m-0 origin-bottom animation-duration-150 overflow-hidden animation-ease-in-out">
+                <li><a pripple=""
+                    class="p-ripple p-element flex align-items-center cursor-pointer p-3 hover:bg-purple-50 text-gray-800 transition-duration-150 transition-colors"
+                    style="border-radius: 30px;"><i class="pi pi-user mr-2"></i><span
+                      class="font-medium">Perfil</span><span class="p-ink"></span></a></li>
+                <li><a pripple=""
+                    class="p-ripple p-element flex align-items-center cursor-pointer p-3 hover:bg-purple-50 text-gray-800 transition-duration-150 transition-colors"
+                    style="border-radius: 30px;"><i class="pi pi-sign-out mr-2"></i><span
+                      class="font-medium">Sair</span><span class="p-ink"></span></a></li>
+              </ul>
+              <a (click)="toggleList()" pripple="" pstyleclass="@prev" enterclass="hidden" enteractiveclass="slidedown"
+                leavetoclass="hidden" leaveactiveclass="slideup"
+                class="p-ripple p-element m-3 px-3 py-2 flex align-items-center hover:bg-purple-50 text-gray-800 cursor-pointer transition-duration-150 transition-colors"
+                style="border-radius: 30px;"><img src="assets/images/ailosLogo.png" class="mr-2"
+                  style="width: 28px; height: 28px;"><span class="font-medium">Perfil do Usuário</span><i
+                  class="pi pi-chevron-up ml-auto"></i><span class="p-ink"
+                  style="height: 247px; width: 247px; top: -97.5px; left: 65.5px;"></span>
+              </a>
+            </div>
+
           </div>
           <div class="border-top-1 surface-border p-3 flex justify-content-center column-gap-5"><a pripple=""
               class="p-ripple p-element cursor-pointer text-purple-500 inline-flex align-items-center justify-content-center hover:surface-100 transition-colors transition-duration-150 w-3rem h-3rem border-circle"><i
@@ -85,16 +131,6 @@
               class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center hover:surface-100 transition-colors transition-duration-150 w-3rem h-3rem border-circle"><img
                 src="" style="width: 42px; height: 42px;"><span class="p-ink"></span></a></div>
         </div>
-      </div>
-      <div class="surface-card flex flex-column flex-auto border-round-xl p-5">
-        <div class="flex justify-content-between align-items-center relative lg:static mb-5 column-gap-5">
-          <div class="flex align-items-center"><button pripple="" pstyleclass="#app-sidebar-13" enterclass="hidden"
-              enteractiveclass="fadeinleft" leavetoclass="hidden" leaveactiveclass="fadeoutleft"
-              class="p-ripple p-element p-link cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3"><i
-                class="pi pi-bars text-4xl"></i><span class="p-ink"></span></button>
-          </div>
-        </div>
-        <div class="border-2 border-dashed surface-border surface-50 flex-auto border-round-xl"></div>
       </div>
     </div>
   </div>

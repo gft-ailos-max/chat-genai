@@ -18,4 +18,21 @@ export class ChatComponent {
     this.modulo = true;
     this.historico = false;
   }
+
+  opcoes: any[];
+  selectedOption: any;
+
+  constructor() {
+    this.opcoes = [
+      { label: 'Perfil', value: '1' },
+      { label: 'Configurações', value: '2' },
+    ];
+  }
+
+  isListVisible: boolean = false;
+
+  toggleList() {
+    this.isListVisible = !this.isListVisible;
+  }
+  
 }

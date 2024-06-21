@@ -15,10 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.opcoes = [
       { label: 'Perfil', value: '1' },
-      { label: 'Configurações', value: '2' },
-      { label: 'Módulos', value: '3' },
-      { label: 'Histórico', value: '4' },
-      { label: 'Messagens', value: '5' }
+      { label: 'Sair', value: '2' }
     ];
   }
 
