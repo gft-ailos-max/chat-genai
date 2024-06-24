@@ -1,4 +1,4 @@
-<div header="SelectButton Menu">
+<!-- <div header="SelectButton Menu">
   <div class="block-section">
     <div class="block-content">
       <div class="ng-star-inserted" style="height: 100vh; overflow: hidden;">
@@ -6,8 +6,6 @@
           class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none"
           style="width: 280px;">
           <div class="flex flex-column h-full">
-            <div class="flex align-items-center justify-content-center px-3 py-5 border-bottom-1 surface-border"
-              style="height: 60px;"><img src="assets/images/ailosLogo.png" alt="Image" height="50"></div>
             <div class="flex justify-content-center py-5">
               <div role="group" class="p-selectbutton p-buttonset p-component">
                 <div role="button" pripple=""
@@ -27,7 +25,9 @@
             <div *ngIf="historico" class="overflow-y-auto px-5 flex-1">
               <ul class="list-none p-0 m-0 ng-star-inserted">
                 <li>
-                  <p class="text-primary">Ultimas 24 horas</p>
+                  <p style="font-family: 'Exo 2', sans-serif;
+                  font-weight: 700 !important;
+                  color: #165C7D !important;" class="text-primary">Ultimas 24 horas</p>
                   <a pripple=""
                     class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
                     style="border-radius: 12px;">
@@ -47,7 +47,9 @@
                       style="height: 215px; width: 215px; top: -82.5px; left: -18.5px;"></span></a></li>
                 <li>
                   <br>
-                  <p class="text-primary">Ultimos 3 dias</p>
+                  <p style="font-family: 'Exo 2', sans-serif;
+                  font-weight: 700 !important;
+                  color: #165C7D !important;" class="text-primary">Ultimos 3 dias</p>
                   <a pripple=""
                     class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
                     style="border-radius: 12px;"><span class="font-medium">ien libero, quis commodo augue malesuada at.
@@ -112,11 +114,11 @@
                     style="border-radius: 30px;"><i class="pi pi-sign-out mr-2"></i><span
                       class="font-medium">Sair</span><span class="p-ink"></span></a></li>
               </ul>
-              <a (click)="toggleList()" pripple="" pstyleclass="@prev" enterclass="hidden" enteractiveclass="slidedown"
+              <a (click)="toggleList()" pripple="" pstyleclass="@prev" enterFromClass="hidden" enteractiveclass="slidedown"
                 leavetoclass="hidden" leaveactiveclass="slideup"
                 class="p-ripple p-element m-3 px-3 py-2 flex align-items-center hover:bg-purple-50 text-gray-800 cursor-pointer transition-duration-150 transition-colors"
-                style="border-radius: 30px;"><img src="assets/images/ailosLogo.png" class="mr-2"
-                  style="width: 28px; height: 28px;"><span class="font-medium">Perfil do Usuário</span><i
+                style="border-radius: 30px;">
+                <i class="pi pi-user mr-2"></i><span class="font-medium">Max Filipe</span><i
                   class="pi pi-chevron-up ml-auto"></i><span class="p-ink"
                   style="height: 247px; width: 247px; top: -97.5px; left: 65.5px;"></span>
               </a>
@@ -133,5 +135,132 @@
         </div>
       </div>
     </div>
+  </div>
+</div> -->
+
+
+
+<div class="min-h-screen flex surface-ground">
+  <div id="app-sidebar-13" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
+      <div class="flex flex-column h-full">
+          <div class="flex justify-content-center py-5">
+              <p-selectButton [options]="menuOptions" [(ngModel)]="menuOption" optionLabel="name" optionValue="value"></p-selectButton>
+          </div>
+          <div class="overflow-y-auto px-5 flex-1">
+                <ul class="list-none p-0 m-0 ng-star-inserted" *ngIf="menuOption == 0">
+                  <li>
+                    <p style="font-family: 'Exo 2', sans-serif;
+                    font-weight: 700 !important;
+                    color: #165C7D !important;" class="text-primary">Ultimas 24 horas</p>
+                    <a pripple=""
+                      class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                      style="border-radius: 12px;">
+                      <span class="font-medium">
+                        Neque porro quisquam est qui dolorem ipsum
+                        quia dolor sit amet, consectetur, adipisci velit..."
+                      </span>
+                      <span class="p-ink"></span>
+                    </a>
+                  </li>
+                  <li><a pripple=""
+                      class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                      style="border-radius: 12px;"><span class="font-medium">In eu felis vehicula, auctor dui in, egestas
+                        turpis. Vestibulum nec ultrices lorem. Suspendisse fringilla elit ligula, vitae placerat arcu
+                        pretium eget. Aenean et sem ullamcorper, convallis quam nec, imperdiet dolor. Quisque at neque at
+                        magna blandit interdum. Donec facilisis</span><span class="p-ink"
+                        style="height: 215px; width: 215px; top: -82.5px; left: -18.5px;"></span></a></li>
+                  <li>
+                    <br>
+                    <p style="font-family: 'Exo 2', sans-serif;
+                    font-weight: 700 !important;
+                    color: #165C7D !important;" class="text-primary">Ultimos 3 dias</p>
+                    <a pripple=""
+                      class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                      style="border-radius: 12px;"><span class="font-medium">ien libero, quis commodo augue malesuada at.
+                        Proin arcu libero, posuere a convallis tincidunt, convallis sed nunc. Quisque lacus justo,
+                        ultrices a congue in, aliquam eu nisi. Aliquam scelerisque est at tortor scelerisque interdum. Ut
+                        at varius magna. Sed et libero eget lorem mollis porttitor vitae sed libero. Morbi pharetra quam
+                        quis dapibus sollicitudin.</span><span class="p-ink"
+                        style="height: 215px; width: 215px; top: -67.5px; left: -72.5px;"></span></a>
+                  </li>
+                  <li><a pripple=""
+                      class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                      style="border-radius: 12px;"><span class="font-medium">lit hendrerit vel. Duis vulputate justo nec
+                        ante aliquet mollis. </span>
+                    </a></li>
+                  <li><a pripple=""
+                      class="text-limit p-ripple p-element flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors"
+                      style="border-radius: 12px;"><span class="font-medium">Pellentesque vulputate nisl lorem, quis
+                        congue massa euismod non. Ves</span><span class="p-ink"
+                        style="height: 215px; width: 215px; top: -97.5px; left: -47.5px;"></span></a></li>
+                </ul>
+              <ul class="list-none p-0 m-0" *ngIf="menuOption == 1">
+                  <li>
+                      <a pRipple class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-hover transition-duration-150 transition-colors" style="border-radius: 12px">
+                          <span style="font-family: 'Exo 2', sans-serif;" class="font-medium">Módulos XYZ</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="mt-auto border-top-1 border-white-alpha-40">
+            <ul *ngIf="isListVisible"
+              class="list-none p-2 m-0 origin-bottom animation-duration-150 overflow-hidden animation-ease-in-out">
+              <li><a pripple=""
+                  class="p-ripple p-element flex align-items-center cursor-pointer p-3 hover:bg-purple-50 text-gray-800 transition-duration-150 transition-colors"
+                  style="border-radius: 30px;"><i class="pi pi-user mr-2"></i><span
+                    class="font-medium">Perfil</span><span class="p-ink"></span></a></li>
+              <li><a pripple=""
+                  class="p-ripple p-element flex align-items-center cursor-pointer p-3 hover:bg-purple-50 text-gray-800 transition-duration-150 transition-colors"
+                  style="border-radius: 30px;"><i class="pi pi-sign-out mr-2"></i><span
+                    class="font-medium">Sair</span><span class="p-ink"></span></a></li>
+            </ul>
+            <a (click)="toggleList()" pripple="" pstyleclass="@prev" enterFromClass="hidden" enteractiveclass="slidedown"
+              leavetoclass="hidden" leaveactiveclass="slideup"
+              class="p-ripple p-element m-3 px-3 py-2 flex align-items-center hover:bg-purple-50 text-gray-800 cursor-pointer transition-duration-150 transition-colors"
+              style="border-radius: 30px;">
+              <i class="pi pi-user mr-2"></i><span class="font-medium">Max Filipe</span><i
+                class="pi pi-chevron-up ml-auto"></i><span class="p-ink"
+                style="height: 247px; width: 247px; top: -97.5px; left: 65.5px;"></span>
+            </a>
+          </div>
+      </div>
+  </div>
+  <div class="min-h-screen flex flex-column flex-auto surface-ground p-5">
+      <div class="surface-card flex flex-column flex-auto border-round-xl p-5">
+          <div class="flex justify-content-between align-items-center relative lg:static mb-5 column-gap-5">
+              <div style="font-family: 'Exo 2', sans-serif;
+              font-weight: 700 !important;
+              font-size: 20px;
+              color: #165C7D !important;" class="flex align-items-center">
+                  <button pRipple class="p-link cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-13"
+                      enterFromClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden"
+                      leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                      <i class="pi pi-bars text-4xl"></i>
+                  </button>
+                  <div class="font-medium">Bem-vindo, <span class="font-bold">Max Filipe!</span> 👋</div>
+              </div>
+              <div>
+                  <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterFromClass="hidden"
+                      enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout"
+                      [hideOnOutsideClick]="true">
+                      <i class="pi pi-ellipsis-v text-2xl"></i>
+                  </a>
+                  <ul class="list-none p-3 lg:p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row lg:border-round-none border-round-xl
+                              surface-overlay border-1 lg:border-none surface-border right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
+                      <li>
+                          <span class="p-input-icon-left lg:mr-3 mb-3 lg:mb-0">
+                              <i class="pi pi-search"></i>
+                              <input type="text" pInputText class="border-round-3xl w-8rem sm:w-full" placeholder="Pesquisar">
+                          </span>
+                      </li>
+                      <li>
+                          <button style="background-color: #00a9ce !important;" class="border-round-3xl white-space-nowrap w-full lg:w-auto" iconPos="right" pButton pRipple icon="pi pi-plus" label="Próximo"></button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="border-2 border-dashed surface-border surface-50 flex-auto border-round-xl">
+          </div>
+      </div>
   </div>
 </div>

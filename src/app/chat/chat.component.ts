@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ChatComponent {
 
+  menuOptions = [
+    { name: 'Histórico', value: 0 },
+    { name: 'Módulos', value: 1 },
+];
+
+menuOption: number = 0;
+
 
   historico: boolean = true;
   modulo: boolean = false;
@@ -34,5 +41,5 @@ export class ChatComponent {
   toggleList() {
     this.isListVisible = !this.isListVisible;
   }
-  
+
 }
