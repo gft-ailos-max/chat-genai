@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class ChatComponent {
 
   menuOptions = [
-    { name: 'Histórico', value: 0 },
-    { name: 'Módulos', value: 1 },
+    { name: 'Histórico', value: 0, icon: 'pi pi-history' },
+    { name: 'Módulos', value: 1, icon: 'pi pi-bars' },
 ];
 
 menuOption: number = 0;
