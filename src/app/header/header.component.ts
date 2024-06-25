@@ -19,5 +19,11 @@ export class HeaderComponent implements OnInit {
     ];
   }
 
+  isListVisible: boolean = false;
+
+  toggleList() {
+    this.isListVisible = !this.isListVisible;
+  }
+
   ngOnInit(): void {}
 }
